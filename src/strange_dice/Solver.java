@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Solver {
 
-	private static List<List<Integer>> product(List<Integer> A, List<Integer> B, List<Integer> C){
+	static List<List<Integer>> product(List<Integer> A, List<Integer> B, List<Integer> C){
 		List<List<Integer>> result = new ArrayList<List<Integer>>();
 		for (Integer a : A) {
 			for (Integer b : B) {
@@ -22,10 +22,8 @@ public class Solver {
 		return result;
 	}
 
-	private static void printer(String message){
-		System.out.println("=============================");
-		System.out.println(message);
-		System.out.println("=============================");
+	static String printer(String message){
+		return "=============================\n"+message+"\n=============================\n";
 	}
 
 	public static int wins(List<List<Integer>> prods, int firstPos, int secondPos){
