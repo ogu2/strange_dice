@@ -23,7 +23,7 @@ public class Solver {
 	}
 
 	static String printer(String message){
-		return "=============================\n"+message+"\n=============================\n";
+		return message+": ";
 	}
 
 	public static int wins(List<List<Integer>> prods, int firstPos, int secondPos){
